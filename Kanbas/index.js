@@ -20,10 +20,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: [
-      process.env.NETLIFY_URL || "http://localhost:3000",
-      "https://elaborate-elf-2f7724.netlify.app",
-    ],
+    origin: [process.env.NETLIFY_URL || "http://localhost:3000"],
   })
 );
 const sessionOptions = {
